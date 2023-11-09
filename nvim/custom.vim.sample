@@ -1,0 +1,2 @@
+" sample customizations
+" let g:ale_ruby_rubocop_executable = '/Users/brianmartin/.gem/ruby/3.1.4/bin/rubocop' 
