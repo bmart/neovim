@@ -60,12 +60,6 @@ Plug 'junegunn/fzf.vim'
 " Jedi
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
-" Neomake
-"Plug 'neomake/neomake'
-
-" Surround
-Plug 'tpope/vim-surround'
-
 " Better language packs
 Plug 'sheerun/vim-polyglot'
 
@@ -74,11 +68,6 @@ Plug 'mileszs/ack.vim'
 
 " Paint css colors with the real color
 Plug 'lilydjwg/colorizer'
-" Window chooser
-Plug 't9md/vim-choosewin'
-
-" Automatically sort python imports
-"Plug 'fisadev/vim-isort'
 
 " Generate html in a simple way
 Plug 'mattn/emmet-vim'
@@ -87,37 +76,24 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'shumphrey/fugitive-gitlab.vim'
 
-" Git/mercurial/others diff icons on the side of the file lines
-Plug 'mhinz/vim-signify'
-
 " Icons for NERDTree
-"Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 " Typescript / COC
 Plug 'leafgarland/typescript-vim'
-" Plug 'neoclide/coc.nvim', {'branch' : 'release', 'do': 'yarn install --frozen-lockfile', 'for' : 'typescript' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"Plug 'ianks/vim-tsx'
 
 Plug 'tpope/vim-rails'
 
 Plug 'sotte/presenting.vim'
 
-Plug 'alec-gibson/nvim-tetris'
-
 " Debug Adaptor Protocol
 Plug 'mfussenegger/nvim-dap'
 
-
-" My Extras
 Plug 'flazz/vim-colorschemes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dikiaap/minimalist'
 Plug 'skwp/greplace.vim'
-Plug 'gruvbox-community/gruvbox'
-Plug 'sainnhe/gruvbox-material'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
@@ -146,7 +122,7 @@ let mapleader="\<Space>"
 set timeoutlen=300 " Set timeout length to 500 ms
 set nu
 
-colorscheme vim-material
+colorscheme feral
 set background=dark
 
 
@@ -155,8 +131,6 @@ hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 
-" Good outside colorscheme
-"colorscheme srcery 
 
 " split settings / note control-w c to close a split / also to resize  :resize
 set splitbelow splitright
