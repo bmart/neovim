@@ -12,7 +12,11 @@ brew install fzf
 ```
 gem install solargraph
 ```
-4. launch nvim and allow it to install plugins
+4. install ctags (for tagbar - optional)
+```
+brew install ctags
+```
+5. launch nvim and allow it to install plugins
 
 ## Key binding notes
 * the default **leader key** has been changed to <space>
