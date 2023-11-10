@@ -89,6 +89,7 @@ Plug 'sotte/presenting.vim'
 
 " Debug Adaptor Protocol
 Plug 'mfussenegger/nvim-dap'
+
 Plug 'flazz/vim-colorschemes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dikiaap/minimalist'
@@ -110,11 +111,37 @@ endif
 " General Settings 
 source ~/.config/nvim/configs/general-settings.vim
 
-" Non-plugin specific Key bindings
-source ~/.config/nvim/configs/keybindings.vim
-
 " Colour
 source ~/.config/nvim/configs/colour.vim
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ~> Keybindings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Make adjusing split sizes a bit more friendly
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
+noremap <silent> <C-Up> :resize +3<CR>
+noremap <silent> <C-Down> :resize -3<CR>
+
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"tab navigation
+map tt :tabnew 
+map <Leader><Right> <ESC>:tabn<CR>
+map <Leader><Left> <ESC>:tabp<CR>
+
+" quickly close quick fix window
+nnoremap <leader>c :cclose<CR>
+
+"save current buffer
+nnoremap <leader>w :w<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Plugin Customizations
