@@ -33,53 +33,37 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'dense-analysis/ale'
 
-" Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
 
-" Code commenter
 Plug 'scrooloose/nerdcommenter'
 
-" Better file browser
 Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
-" Class/module browser
 Plug 'majutsushi/tagbar'
 
-" Search results counter
 Plug 'vim-scripts/IndexedSearch'
 
-" Airline
 Plug 'vim-airline/vim-airline'
-
 Plug 'vim-airline/vim-airline-themes'
 
-" FZF
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Jedi
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 
-" Better language packs
 Plug 'sheerun/vim-polyglot'
 
-" Ack code search (requires ack installed in the system)
 Plug 'mileszs/ack.vim'
 
-" Paint css colors with the real color
 Plug 'lilydjwg/colorizer'
 
-" Generate html in a simple way
 Plug 'mattn/emmet-vim'
 
-" Git integration
 Plug 'tpope/vim-fugitive'
 Plug 'shumphrey/fugitive-gitlab.vim'
 
-" Icons for NERDTree
-Plug 'ryanoasis/vim-devicons'
 
-" Typescript / COC
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -87,7 +71,6 @@ Plug 'tpope/vim-rails'
 
 Plug 'sotte/presenting.vim'
 
-" Debug Adaptor Protocol
 Plug 'mfussenegger/nvim-dap'
 
 Plug 'flazz/vim-colorschemes'
@@ -131,25 +114,21 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"tab navigation
+" Tab navigation
 map tt :tabnew 
 map <Leader><Right> <ESC>:tabn<CR>
 map <Leader><Left> <ESC>:tabp<CR>
 
-" quickly close quick fix window
+" Quickly close quick fix window
 nnoremap <leader>c :cclose<CR>
 
-"save current buffer
+" Save current buffer
 nnoremap <leader>w :w<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Plugin Customizations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Fugitive-gitlab
-let g:fugitive_gitlab_domains = ['https://gitlab.rcgtconsulting.io']
-nnoremap <leader>gb :Git blame<CR>
 
 " VSnip
 let g:vsnip_snippet_dir = expand('~/.config/nvim/snippets')
@@ -191,8 +170,11 @@ source ~/.config/nvim/configs/ack.vim
 " COC
 source ~/.config/nvim/configs/coc.vim
 
+" Fugitive
+nnoremap <leader>gb :Git blame<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ~> env related customizations (optional)
+" ~> Env related customizations (optional)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if filereadable(expand("~/.config/nvim/custom.vim"))

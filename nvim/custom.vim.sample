@@ -1,2 +1,4 @@
 " sample customizations
-" let g:ale_ruby_rubocop_executable = '/Users/brianmartin/.gem/ruby/3.1.4/bin/rubocop' 
+let g:ale_ruby_rubocop_executable = '/Users/<user-name>/.gem/ruby/3.1.4/bin/rubocop' 
+
+let g:fugitive_gitlab_domains = ['https://<your-gitlab-domain>']
