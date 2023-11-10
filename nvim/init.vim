@@ -32,7 +32,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'dense-analysis/ale'
-
 Plug 'arielrossanigo/dir-configs-override.vim'
 
 Plug 'scrooloose/nerdcommenter'
@@ -58,8 +57,6 @@ Plug 'mileszs/ack.vim'
 
 Plug 'lilydjwg/colorizer'
 
-Plug 'mattn/emmet-vim'
-
 Plug 'tpope/vim-fugitive'
 Plug 'shumphrey/fugitive-gitlab.vim'
 
@@ -74,6 +71,7 @@ Plug 'sotte/presenting.vim'
 Plug 'mfussenegger/nvim-dap'
 
 Plug 'flazz/vim-colorschemes'
+Plug 'elvessousa/sobrio'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dikiaap/minimalist'
 Plug 'skwp/greplace.vim'

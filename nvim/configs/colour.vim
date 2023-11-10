@@ -1,4 +1,5 @@
 colorscheme fahrenheit
+colorscheme sobrio
 set background=dark
 
 " These two lines will allow nvim background to be transparent like the iterm
