@@ -1,4 +1,4 @@
-colorscheme feral
+colorscheme fahrenheit
 set background=dark
 
 " These two lines will allow nvim background to be transparent like the iterm

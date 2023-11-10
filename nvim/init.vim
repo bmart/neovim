@@ -124,9 +124,6 @@ source ~/.config/nvim/configs/colour.vim
 let g:fugitive_gitlab_domains = ['https://gitlab.rcgtconsulting.io']
 nnoremap <leader>gb :Git blame<CR>
 
-" Emmet
-let g:user_emmet_leader_key='<leader>e'
-
 " VSnip
 let g:vsnip_snippet_dir = expand('~/.config/nvim/snippets')
 imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
