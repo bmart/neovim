@@ -1,0 +1,22 @@
+{
+  "translate strings": {
+    "prefix": "trans",
+    "body": "<%= t(\"$1\") %>",
+    "description": "none"
+  },
+  "debug": {
+    "prefix": ",d",
+    "body": "<% binding.pry %>",
+    "description": "none"
+  },
+  "console": {
+    "prefix": "console",
+    "body": "<% console %>",
+    "description": "none"
+  },
+  "start template": {
+    "prefix": ",t",
+    "body": "<% $1 %>",
+    "description": "none"
+  }
+}
