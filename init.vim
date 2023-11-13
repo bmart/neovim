@@ -164,6 +164,6 @@ nnoremap <leader>gb :Git blame<CR>
 " ~> Env related customizations (optional)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if filereadable(expand("~/.config/nvim/custom.vim"))
-  source ~/.config/nvim/custom.vim
+if filereadable(expand("~/.config/nvim/env.vim"))
+  source ~/.config/nvim/env.vim
 endif
