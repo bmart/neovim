@@ -3,8 +3,18 @@ nvim config
 
 
 ## Installation
+1. clone this repo and copy/or symlink from .config so that you have ~/.config/nvim 
 
-1. clone repo somewhere and symlink to ~/.config/nvim or clone inside ~/.config as `~/.config/nvim` 
+
+For example: 
+```
+
+cd ~/<SomeDirectory>
+git clone https://github.com/bmart/neovim-config.git
+cd ~/.config
+ln -s ~/<SomeDirectory>/neovim-config nvim
+```
+ 
 2. install fzf via brew
 ```
 brew install fzf
