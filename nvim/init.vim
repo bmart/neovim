@@ -25,7 +25,6 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> VimPlug plugin setup
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -60,7 +59,6 @@ Plug 'lilydjwg/colorizer'
 Plug 'tpope/vim-fugitive'
 Plug 'shumphrey/fugitive-gitlab.vim'
 
-
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -71,12 +69,19 @@ Plug 'sotte/presenting.vim'
 Plug 'mfussenegger/nvim-dap'
 
 Plug 'flazz/vim-colorschemes'
+
 Plug 'elvessousa/sobrio'
+
 Plug 'altercation/vim-colors-solarized'
+
 Plug 'dikiaap/minimalist'
+
 Plug 'skwp/greplace.vim'
+
 Plug 'hrsh7th/vim-vsnip'
+
 Plug 'hrsh7th/vim-vsnip-integ'
+
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 
@@ -95,7 +100,6 @@ source ~/.config/nvim/configs/general-settings.vim
 " Colour
 source ~/.config/nvim/configs/colour.vim
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Keybindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,7 +109,6 @@ noremap <silent> <C-Left> :vertical resize +3<CR>
 noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :resize +3<CR>
 noremap <silent> <C-Down> :resize -3<CR>
-
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -123,38 +126,24 @@ nnoremap <leader>c :cclose<CR>
 " Save current buffer
 nnoremap <leader>w :w<cr>
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Plugin Customizations
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" VSnip
-let g:vsnip_snippet_dir = expand('~/.config/nvim/snippets')
-imap <expr> <C-j>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
-imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
-smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+"VSnip 
+source ~/.config/nvim/configs/vsnip.vim
 
+"Tagbar 
+source ~/.config/nvim/configs/tagbar.vim
 
-" TagBar
-nmap <Leader>tb :TagbarToggle<CR>
-let g:tagbar_autofocus = 1
-
-" Nerdtree
-nmap <Leader>e :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+"Nerdtree 
+source ~/.config/nvim/configs/nerdtree.vim
 
 " Airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'solarized_flood'
-let g:airline#extensions#whitespace#enabled = 0
+source ~/.config/nvim/configs/airline.vim
 
-" Ale
-let g:ale_linters = {
-\ 'javascript': ['eslint'],
-\ 'ruby': ['rubocop']
-\}
-
-let g:ale_linters_explicit = 1
+"Ale 
+source ~/.config/nvim/configs/ale.vim
 
 " FZF 
 source ~/.config/nvim/configs/fzf.vim

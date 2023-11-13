@@ -30,11 +30,9 @@ or comment out the following
 10. launch nvim and allow it to install plugins
 
 ## Key binding notes
-* the default **leader key** has been changed to <space>
-* to open fuzzy file search enter <space>f
-* to open Explorer, enter <space>e
+* the default **leader key** has been changed to \<space>
+* to open fuzzy file search enter \<space>f
+* to open Explorer, enter \<space>e
 * to jump to a method or class definition in a ruby file: `gd`, use ctrl-o to jump back
-
-## Customizations
 
 
