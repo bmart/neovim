@@ -1,6 +1,7 @@
 # neovim
 nvim config
 
+
 ## Installation
 
 1. clone repo somewhere and symlink to ~/.config/nvim or clone inside ~/.config as `~/.config/nvim` 
@@ -27,6 +28,7 @@ or comment out the following
     Plug 'ryanoasis/vim-devicons'
 
 ```
+9. Install nodejs ( for coc )
 10. launch nvim and allow it to install plugins
 
 ## Key binding notes
