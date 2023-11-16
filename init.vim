@@ -31,7 +31,6 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'dense-analysis/ale'
-Plug 'arielrossanigo/dir-configs-override.vim'
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -49,8 +48,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-
-Plug 'sheerun/vim-polyglot'
 
 Plug 'mileszs/ack.vim'
 
@@ -99,6 +96,7 @@ source ~/.config/nvim/configs/general-settings.vim
 
 " Colour
 source ~/.config/nvim/configs/colour.vim
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Keybindings
