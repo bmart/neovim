@@ -5,22 +5,17 @@
     "description": "none"
   },
   "debug": {
-    "prefix": ",d",
+    "prefix": "d",
     "body": "<% binding.pry %>",
     "description": "none"
   },
-  "console": {
-    "prefix": "console",
-    "body": "<% console %>",
-    "description": "none"
-  },
-  "start template": {
-    "prefix": ",t",
+  "template": {
+    "prefix": "o",
     "body": "<% $1 %>",
     "description": "none"
   },
-  "output": {
-    "prefix": "_=",
+  "template=": {
+    "prefix": "o-",
     "body": "<%= $1 %>",
     "description": "make it easy to output something in erb"
   
