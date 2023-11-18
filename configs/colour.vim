@@ -2,7 +2,7 @@
 "colorscheme sobrio
 "colorscheme monokai-chris
 "colorscheme Tomorrow
-colorscheme desert
+colorscheme ayu
 set background=dark
 
 " These two lines will allow nvim background to be transparent like the iterm

@@ -9,10 +9,7 @@ nmap <silent>g] <Plug>(coc-diagnostic-next)
 nmap <silent> gs :call CocAction('jumpDefinition', 'split')<CR>
 
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-json', 
+  \ 'coc-json',
   \ 'coc-solargraph',
   \ ]
+

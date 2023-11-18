@@ -2,21 +2,20 @@
   "suggest.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": [
   ],
-   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "json.schemas": [
     {
       "fileMatch": [
         "/config/*/config.json",
-        "/config/*/config.json",
+        "/config/*/config.json"
       ],
       "url": "/config/config.schema.json"
     },
     {
       "fileMatch": [
         "/config/*/secrets.json",
-        "/config/*/secrets.ejson",
+        "/config/*/secrets.ejson"
       ],
       "url": "/config/secrets.schema.json"
     },

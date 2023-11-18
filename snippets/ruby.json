@@ -47,5 +47,12 @@
   "some-uuid": {
     "prefix": "-uuid",
     "body": "\"53ab22f4-031a-44da-8568-4854402fe556\""
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def $1",
+      "end"
+    ]
   }
 }
