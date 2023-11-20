@@ -15,7 +15,7 @@
     "description": "none"
   },
   "template=": {
-    "prefix": "o-",
+    "prefix": "o=",
     "body": "<%= $1 %>",
     "description": "make it easy to output something in erb"
   
