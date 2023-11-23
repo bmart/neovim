@@ -10,3 +10,4 @@ let g:ale_fixers = {
 \}
 
 let g:ale_linters_explicit = 1
+map <Leader>af <ESC>:ALEFix<CR>
