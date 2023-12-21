@@ -5,7 +5,7 @@
     "description": "add frozen literal comment to file"
   },
   "rspec-begin": {
-    "prefix": "rbegin",
+    "prefix": "rspec-begin",
     "body": [
       "# frozen_string_literal: true",
       "",
@@ -21,7 +21,7 @@
     "body": [ "binding.pry"]
   },
   "rspec-it": {
-    "prefix": "rit",
+    "prefix": "it",
     "body": ["it \"$1\" do", "\t$2", "end"]
   },
   "rspec-describe": {
@@ -29,15 +29,15 @@
     "body": ["describe \"$1\" do", "\t$2", "end"]
   },
   "rspec-let": {
-    "prefix": "rlet",
+    "prefix": "let",
     "body": ["let(:$1) { $2 }"]
   },
   "rspec-let-do": {
-    "prefix": "rdo",
+    "prefix": "do",
     "body": ["let(:$1) do", "\t$2", "end"]
   },
   "rspec-before": {
-    "prefix": "rbefore",
+    "prefix": "before",
     "body": ["before do", "\t$1", "end"]
   },
   "abstract-method": {
