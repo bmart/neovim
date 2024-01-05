@@ -1,71 +1,66 @@
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
-
-local packer_bootstrap = ensure_packer()
-
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
-
-  use 'dense-analysis/ale'
-
-  use 'scrooloose/nerdcommenter'
-
-  use 'scrooloose/nerdtree'
-  use 'ryanoasis/vim-devicons'
-
-  use 'majutsushi/tagbar'
-
-  use 'vim-scripts/IndexedSearch'
-
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
-
-  use { 'junegunn/fzf',  dir = '~/.fzf', run = './install --all' }
-  use 'junegunn/fzf.vim'
-
-  use 'mileszs/ack.vim'
-
-  use 'lilydjwg/colorizer'
-
-  use 'tpope/vim-fugitive'
-  use 'shumphrey/fugitive-gitlab.vim'
+vim.opt.rtp:prepend(lazypath)
 
 
-  use { 'neoclide/coc.nvim', branch = 'release' }
+local plugins = {
+  'dense-analysis/ale',
+  'scrooloose/nerdcommenter',
+  'scrooloose/nerdtree',
+  'ryanoasis/vim-devicons',
+  'majutsushi/tagbar',
+  'vim-scripts/IndexedSearch',
+  'vim-airline/vim-airline',
+  'vim-airline/vim-airline-themes',
+  {
+    'junegunn/fzf',
+    dir = '~/.fzf',
+    build = './install --all',
+   
+  },  
+  { 
+    'junegunn/fzf.vim',
+    dependencies = { 'junegunn/fzf' }
+  },
+  'mileszs/ack.vim',
+  'lilydjwg/colorizer',
+  'tpope/vim-fugitive',
+  'shumphrey/fugitive-gitlab.vim',
+  {
+    'neoclide/coc.nvim',
+    branch = 'release'
+  },
+  'tpope/vim-rails',
+  'sotte/presenting.vim',
+  'mfussenegger/nvim-dap',
+  'flazz/vim-colorschemes',
+  'elvessousa/sobrio',
+  'altercation/vim-colors-solarized',
+  'dikiaap/minimalist',
+  'skwp/greplace.vim',
+  'hrsh7th/vim-vsnip',
+  'hrsh7th/vim-vsnip-integ',
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && yarn install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  }
+}
 
-  use 'tpope/vim-rails'
+local opts = {}
 
-  use 'sotte/presenting.vim'
+require("lazy").setup(plugins, opts)
 
-  use 'mfussenegger/nvim-dap'
-
-  use 'flazz/vim-colorschemes'
-
-  use 'elvessousa/sobrio'
-
-  use 'altercation/vim-colors-solarized'
-
-  use 'dikiaap/minimalist'
-
-  use 'skwp/greplace.vim'
-
-  use 'hrsh7th/vim-vsnip'
-
-  use 'hrsh7th/vim-vsnip-integ'
-
-  use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
-
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
