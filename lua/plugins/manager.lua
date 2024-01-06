@@ -37,7 +37,8 @@ local plugins = {
   'shumphrey/fugitive-gitlab.vim',
   {
     'neoclide/coc.nvim',
-    branch = 'release'
+      branch = "master",
+      build = "npm ci",
   },
   'tpope/vim-rails',
   'sotte/presenting.vim',
