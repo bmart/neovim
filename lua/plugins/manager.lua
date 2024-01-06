@@ -13,32 +13,32 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
-  'dense-analysis/ale',
-  'scrooloose/nerdcommenter',
-  'scrooloose/nerdtree',
-  'ryanoasis/vim-devicons',
-  'majutsushi/tagbar',
-  'vim-scripts/IndexedSearch',
-  'vim-airline/vim-airline',
-  'vim-airline/vim-airline-themes',
-  {
-    'junegunn/fzf',
-    dir = '~/.fzf',
-    build = './install --all',
-   
-  },  
-  { 
-    'junegunn/fzf.vim',
-    dependencies = { 'junegunn/fzf' }
-  },
-  'mileszs/ack.vim',
-  'lilydjwg/colorizer',
-  'tpope/vim-fugitive',
-  'shumphrey/fugitive-gitlab.vim',
+ 'dense-analysis/ale',
+ 'scrooloose/nerdcommenter',
+ 'scrooloose/nerdtree',
+ 'ryanoasis/vim-devicons',
+ 'majutsushi/tagbar',
+ 'vim-scripts/IndexedSearch',
+ 'vim-airline/vim-airline',
+ 'vim-airline/vim-airline-themes',
+ {
+   'junegunn/fzf',
+   dir = '~/.fzf',
+   build = './install --all',
+
+ },  
+ { 
+   'junegunn/fzf.vim',
+   dependencies = { 'junegunn/fzf' }
+ },
+ 'mileszs/ack.vim',
+ 'lilydjwg/colorizer',
+ 'tpope/vim-fugitive',
+ 'shumphrey/fugitive-gitlab.vim',
   {
     'neoclide/coc.nvim',
-      branch = "master",
-      build = "npm ci",
+      branch = "release",
+      build = "yarn install"
   },
   'tpope/vim-rails',
   'sotte/presenting.vim',
