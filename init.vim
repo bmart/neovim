@@ -155,6 +155,9 @@ source ~/.config/nvim/configs/ack.vim
 " COC
 source ~/.config/nvim/configs/coc.vim
 
+" Rails.vim
+source ~/.config/nvim/configs/rails.vim
+
 " Fugitive
 nnoremap <leader>gb :Git blame<CR>
 
