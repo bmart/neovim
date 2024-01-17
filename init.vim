@@ -81,6 +81,10 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
+" Tabs
+Plug 'romgrk/barbar.nvim'
+  Plug 'nvim-tree/nvim-web-devicons'
+
 
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
@@ -160,6 +164,10 @@ source ~/.config/nvim/configs/rails.vim
 
 " Fugitive
 nnoremap <leader>gb :Git blame<CR>
+
+" tabs
+" barbar
+source ~/.config/nvim/configs/barbar.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Env related customizations (optional)

@@ -1,5 +1,6 @@
 " use GFiles instead of files to exclude anything in .gitignore
 nmap <Leader>f :GFiles<CR>
+nmap <Leader>ff :Files<CR>
 nmap <Leader>b :Buffers<CR>
 " tags (symbols) in current file finder mapping
 nmap <Leader>g :BTag<CR>

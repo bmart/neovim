@@ -9,6 +9,7 @@ let mapleader="\<Space>"
 set timeoutlen=300 " Set timeout length to 500 ms
 set nu
 
+let g:autoclose_on = 0
 
 " split settings / note control-w c to close a split / also to resize  :resize
 set splitbelow splitright
