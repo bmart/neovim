@@ -16,6 +16,10 @@
       "end"
     ]
   },
+  "binding.pry": {
+    "prefix": "pry",
+    "body": [ "binding.pry"]
+  },
   "rspec-it": {
     "prefix": "rit",
     "body": ["it \"$1\" do", "\t$2", "end"]

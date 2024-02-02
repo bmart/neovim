@@ -82,8 +82,8 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 " Tabs
-Plug 'romgrk/barbar.nvim'
-  Plug 'nvim-tree/nvim-web-devicons'
+"Plug 'romgrk/barbar.nvim'
+  " Plug 'nvim-tree/nvim-web-devicons'
 
 
 " Tell vim-plug we finished declaring plugins, so it can load them
@@ -167,7 +167,7 @@ nnoremap <leader>gb :Git blame<CR>
 
 " tabs
 " barbar
-source ~/.config/nvim/configs/barbar.vim
+" source ~/.config/nvim/configs/barbar.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ~> Env related customizations (optional)

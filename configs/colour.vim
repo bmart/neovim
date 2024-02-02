@@ -6,6 +6,7 @@
 colorscheme 1989
 colorscheme mustang
 colorscheme Tomorrow-Night
+colorscheme Atelier_EstuaryDark
 set background=dark
 
 " These two lines will allow nvim background to be transparent like the iterm
