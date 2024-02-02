@@ -1,5 +1,6 @@
 -- use GFiles instead of files to exclude anything in .gitignore
 vim.keymap.set("n", "<Leader>f",":GFiles<CR>")
+vim.keymap.set("n", "<Leader>ff",":Files<CR>")
 vim.keymap.set("n", "<Leader>b" ,":Buffers<CR>")
 -- tags (symbols) in current file finder mapping
 vim.keymap.set("n", "<Leader>g",":BTag<CR>")
