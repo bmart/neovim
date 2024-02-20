@@ -21,3 +21,4 @@ vim.keymap.set("n","<leader>c",":cclose<CR>")
 
 --Save current buffer
 vim.keymap.set("n","<leader>w",":w<cr>")
+

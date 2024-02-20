@@ -1,6 +1,6 @@
 vim.cmd.colorscheme("Tomorrow-Night")
 vim.cmd.colorscheme("Atelier_EstuaryDark")
-vim.opt.background = "dark"
+-- vim.opt.background = "dark"
 
 -- These two lines will allow nvim background to be transparent like the iterm
 -- hi! Normal ctermbg=NONE guibg=NONE

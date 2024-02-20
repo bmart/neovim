@@ -1,7 +1,7 @@
 {
   "translate strings": {
     "prefix": "trans",
-    "body": "<%= t(\"$1\") %>",
+    "body": "<%= t('$1') %>",
     "description": "none"
   },
   "debug": {

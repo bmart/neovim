@@ -25,7 +25,7 @@ vim.opt.splitbelow = false
 -- vim.opt.wildmode=list:longest
 
 -- when scrolling, keep cursor 3 lines away from screen border
-vim.opt.scrolloff = 3
+-- vim.opt.scrolloff = 3
 
 -- clear empty spaces at the end of lines on save of python files
 -- autocmd BufWritePre *.py :%s/\s\+$//e
