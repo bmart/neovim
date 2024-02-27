@@ -1,4 +1,5 @@
 require('plugins.config.airline') 
+require('plugins.config.ack') 
 require('plugins.config.ale') 
 require('plugins.config.colour') 
 require('plugins.config.fzf') 

@@ -79,7 +79,16 @@ local plugins = {
     priority = 1000,
     opts = {},
   },
-  'lewis6991/gitsigns.nvim'
+  'lewis6991/gitsigns.nvim',
+    {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
 }
 
 local opts = {}
