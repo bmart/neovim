@@ -25,5 +25,6 @@
       ],
       "url": "/db/seeds/config_schemas/meta.schema.json"
     }
-  ]
+  ],
+  "snippets.ultisnips.pythonPrompt": false
 }

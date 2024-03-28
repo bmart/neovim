@@ -88,7 +88,14 @@ local plugins = {
     config = function()
       vim.cmd.colorscheme "catppuccin-mocha"
     end
+  },
+  'vim-ruby/vim-ruby',
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
   }
+  -- require('plugins.config.neotree')
 }
 
 local opts = {}
