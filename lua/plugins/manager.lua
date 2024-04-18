@@ -26,7 +26,7 @@ local plugins = {
 
     }
   },
-  'nvim-telescope/telescope.nvim',
+  -- 'nvim-telescope/telescope.nvim',
  'dense-analysis/ale',
  'scrooloose/nerdcommenter',
  'scrooloose/nerdtree',
@@ -54,7 +54,12 @@ local plugins = {
       branch = "release",
       build = "yarn install"
   },
-  'tpope/vim-rails',
+  {
+    'tpope/vim-rails',
+    config = function()
+      vim.keymap.set("n", "<Leader>m", ":Emodel", { silent = true })
+    end
+  },
   'sotte/presenting.vim',
   'mfussenegger/nvim-dap',
   'flazz/vim-colorschemes',
