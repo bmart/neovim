@@ -43,4 +43,4 @@ vim.opt.shell="/bin/zsh"
 
 -- Git
 vim.keymap.set("n", "<c-g>f", ":2,$ s/^pick/f<CR>")
-vim.keymap.set("n", "<c-g>s", ":2,$ s/^pick/f<CR>")
+vim.keymap.set("n", "<c-g>s", ":2,$ s/^pick/s<CR>")

@@ -85,22 +85,24 @@ local plugins = {
     opts = {},
   },
   'lewis6991/gitsigns.nvim',
-    {
-    "catppuccin/nvim",
-    lazy = false,
-    name = "catppuccin",
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme "catppuccin-mocha"
-    end
-  },
+  --  {
+   -- "catppuccin/nvim",
+   -- lazy = false,
+   -- name = "catppuccin",
+   -- priority = 1000,
+   -- config = function()
+   --   vim.cmd.colorscheme "catppuccin-mocha"
+   -- end
+   -- },
   'vim-ruby/vim-ruby',
   {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" }
-  }
-  -- require('plugins.config.neotree')
+  },
+  'rose-pine/neovim',
+  require('plugins.config.neotree'),
+  require('plugins.config.dadbod')
 }
 
 local opts = {}

@@ -10,7 +10,8 @@ return {
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
     init = function()
-      vim.keymap.set('n', '<Leader>e', ':Neotree reveal right<CR>')  
+      -- vim.keymap.set('n', '<Leader>e', ':Neotree reveal left<CR>')  
+      vim.keymap.set('n', '<Leader>e', ':Neotree toggle<CR>')  
       vim.keymap.set('n', '<Leader>ee', ':Neotree close<CR>')  
     end
   }
