@@ -10,3 +10,6 @@ vim.keymap.set("n", "<Leader>G",":Tags<CR>")
 vim.keymap.set("n", "<Leader>F",":Lines<CR>") 
 -- commands finder mapping
 vim.keymap.set("n", "<Leader>c",":Commands<CR>") 
+
+
+vim.keymap.set("n", "<Leader>s",":Rg<CR>") 
