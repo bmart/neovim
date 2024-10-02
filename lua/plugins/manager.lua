@@ -101,7 +101,7 @@ local plugins = {
     dependencies = { "nvim-lua/plenary.nvim" }
   },
   'rose-pine/neovim',
-  require('plugins.config.neotree'),
+  -- require('plugins.config.neotree'),
   require('plugins.config.dadbod')
 }
 

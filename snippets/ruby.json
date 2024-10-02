@@ -32,6 +32,11 @@
     "prefix": "rd",
     "body": ["describe \"$1\" do", "\t$2", "end"]
   },
+  "rspec-context": {
+    "prefix": "rc",
+    "body": ["context \"$1\" do", "\t$2", "end"]
+  },
+
   "rspec-let": {
     "prefix": "rl",
     "body": ["let(:$1) { $2 }"]

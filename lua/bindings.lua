@@ -17,7 +17,8 @@ vim.keymap.set("n","<Leader><Right>","<ESC>:tabn<CR>")
 vim.keymap.set("n","<Leader><Left>","<ESC>:tabp<CR>")
 
 -- Quickly close quick fix window
-vim.keymap.set("n","<leader>c",":cclose<CR>")
+vim.keymap.set("n","<leader>cc",":cclose<CR>")
+vim.keymap.set("n","<leader>co",":copen<CR>")
 
 --Save current buffer
 vim.keymap.set("n","<leader>w",":w<cr>")

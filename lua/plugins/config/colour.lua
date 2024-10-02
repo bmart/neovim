@@ -7,4 +7,5 @@
 -- hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 --vim.cmd("colorscheme rose-pine-moon")
-vim.cmd("colorscheme tokyonight-storm")
+-- vim.cmd("colorscheme tokyonight-storm")
+vim.cmd("colorscheme 0x7A69_dark")
