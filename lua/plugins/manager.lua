@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -26,25 +27,26 @@ local plugins = {
 
     }
   },
-  -- 'nvim-telescope/telescope.nvim',
+ 'nvim-telescope/telescope.nvim',
+ 'dbeniamine/cheat.sh-vim',
  'dense-analysis/ale',
  'scrooloose/nerdcommenter',
- 'scrooloose/nerdtree',
+-- 'scrooloose/nerdtree',
  'ryanoasis/vim-devicons',
  'majutsushi/tagbar',
  'vim-scripts/IndexedSearch',
  'vim-airline/vim-airline',
  'vim-airline/vim-airline-themes',
- {
-   'junegunn/fzf',
-   dir = '~/.fzf',
-   build = './install --all',
+ -- {
+ --  'junegunn/fzf',
+ --  dir = '~/.fzf',
+ ---  build = './install --all',
 
- },  
- { 
-   'junegunn/fzf.vim',
-   dependencies = { 'junegunn/fzf' }
- },
+ -- },  
+ -- { 
+ --  'junegunn/fzf.vim',
+ --  dependencies = { 'junegunn/fzf' }
+ -- },
  'mileszs/ack.vim',
  'lilydjwg/colorizer',
  'tpope/vim-fugitive',
@@ -60,7 +62,12 @@ local plugins = {
       vim.keymap.set("n", "<Leader>m", ":Emodel", { silent = true })
     end
   },
-  'sotte/presenting.vim',
+  {
+    'sotte/presenting.vim',
+    config = function()
+      vim.keymap.set("n", "<Leader>p", "<ESC>:PresentingStart<CR>", { silent = true })
+    end
+  },
   'mfussenegger/nvim-dap',
   'flazz/vim-colorschemes',
   'elvessousa/sobrio',
@@ -96,13 +103,31 @@ local plugins = {
    -- },
   'vim-ruby/vim-ruby',
   {
-    "ThePrimeagen/harpoon",
+    "theprimeagen/harpoon",
     branch = "harpoon2",
-    dependencies = { "nvim-lua/plenary.nvim" }
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon"):setup()
+    end,
+    keys = {
+      { "<leader>A", function() require("harpoon"):list():add() end, desc = "harpoon file", },
+      { "<leader>a", function() local harpoon = require("harpoon") harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "harpoon quick menu", },
+      { "<leader>ad", function() require("harpoon"):list():remove(selected_entry) end, desc = "delete selected entry", },
+      { "<leader>1", function() require("harpoon"):list():select(1) end, desc = "harpoon to file 1", },
+      { "<leader>2", function() require("harpoon"):list():select(2) end, desc = "harpoon to file 2", },
+      { "<leader>3", function() require("harpoon"):list():select(3) end, desc = "harpoon to file 3", },
+      { "<leader>4", function() require("harpoon"):list():select(4) end, desc = "harpoon to file 4", },
+      { "<leader>5", function() require("harpoon"):list():select(5) end, desc = "harpoon to file 5", },
+      { "<leader>6", function() require("harpoon"):list():select(6) end, desc = "harpoon to file 6", },
+      { "<leader>7", function() require("harpoon"):list():select(7) end, desc = "harpoon to file 7", },
+      { "<leader>8", function() require("harpoon"):list():select(8) end, desc = "harpoon to file 8", },
+    }
   },
   'rose-pine/neovim',
-  -- require('plugins.config.neotree'),
-  require('plugins.config.dadbod')
+  require('plugins.config.neotree'),
+  require('plugins.config.dadbod'),
+  { 'glacambre/firenvim', build = ":call firenvim#install(0)" }
+
 }
 
 local opts = {}

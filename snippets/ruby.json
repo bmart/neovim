@@ -59,7 +59,7 @@
   },
   "some-uuid": {
     "prefix": "-uuid",
-    "body": "\"53ab22f4-031a-44da-8568-4854402fe556\""
+    "body": "\"$UUID\""
   },
   "def": {
     "prefix": "def",
