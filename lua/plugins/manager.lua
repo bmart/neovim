@@ -51,11 +51,14 @@ local plugins = {
  'lilydjwg/colorizer',
  'tpope/vim-fugitive',
  'shumphrey/fugitive-gitlab.vim',
-  {
-    'neoclide/coc.nvim',
-      branch = "release",
-      build = "yarn install"
-  },
+  --{
+  --  'neoclide/coc.nvim',
+  --    branch = "release",
+  --    build = "yarn install"
+  --},
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
+  "neovim/nvim-lspconfig",
   {
     'tpope/vim-rails',
     config = function()
